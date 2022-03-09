@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:14.1
+    ports:
+      - '127.0.0.1:5432:5432'
+    container_name: nemesis_postgres
+    environment:
+      POSTGRES_USER: ${USER}
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+    volumes:
+      - ${PWD}/db:${PWD}/db
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', '${USER}']
