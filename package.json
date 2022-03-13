@@ -7,6 +7,7 @@
     "@types/react-dom": "^17.0.11",
     "axios": "^0.25.0",
     "esbuild": "^0.14.14",
+    "pixi.js": "^6.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",

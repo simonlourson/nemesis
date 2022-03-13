@@ -22,3 +22,8 @@ body{
 .bg {
   width: 100vw;
 }
+
+#canvasMap{
+  width: 800px;
+  height: 600px;
+}
